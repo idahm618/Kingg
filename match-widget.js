@@ -3,7 +3,7 @@
 function createWidget(container) {
     const FIXTURE_ID = container.getAttribute("data-fixture");
     const LEAGUE = container.getAttribute("data-league") || "eng.1";
-    const API_URL = `https://espn-one.vercel.app/api/espn?league=${LEAGUE}&id=${FIXTURE_ID}`;
+    const API_URL = `https://love-weld-nine.vercel.app/api/espn?league=${LEAGUE}&id=${FIXTURE_ID}`;
     const CACHE_KEY = `fixture_${LEAGUE}_${FIXTURE_ID}`;
     const CACHE_EXPIRY = 30 * 24 * 60 * 60 * 1000; // 30 days
 
