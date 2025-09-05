@@ -2,7 +2,7 @@ async function loadMatch(container, team1, team2) {
   const storageKey = `match_${team1}_${team2}`;
 
   try {
-    const res = await fetch("https://espn-one.vercel.app/api/espn");
+    const res = await fetch("https://api.totalsportslive.co.zw");
     const data = await res.json();
 
     if (!data.events?.length) {
